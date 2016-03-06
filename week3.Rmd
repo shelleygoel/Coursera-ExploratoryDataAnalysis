@@ -1,0 +1,51 @@
+---
+title: "Week 3: Clustering"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Clustering organizes things that are close into groups.
+
+## Hierarhical Clustering
+Simple and intuitive technique to group and visualize 
+multi-dimensional data. 
+
+
+**Method**
+
+1) Find two things which are closest.
+2) Merge them together to form a new super point. This
+super point now represents the two points. 
+4) Find next two closest points and merge them together to 
+a super point
+
+
+**Requires**   
+
+* Distance Metric  
+* Merging approach
+
+
+**Output**
+
+- A tree/dendogram showing how data points are close to eachother.
+
+
+**Distance metric examples**
+
+- Euclidean distance (continuous)
+- Correlation distance (continous)
+- Manhattan distance (binary)
+
+### Example
+
+```{r example}
+set.seed()
+```
+
+
+
+
